@@ -1,1 +1,18 @@
 /* Styles for Single Level Menu */
+@media (min-width: 30em) {
+  .single-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .single-nav li {
+  /*
+    FLEX:
+      the box will grow to fill the available space;
+      it will not shrink when it runs out of room but will wrap because we set the flex-wrap property to wrap
+      we can no longer align them left, right or center because they are taking up all the available space
+  */
+    flex: 1 0 auto;
+    text-align: center;
+  }
+}

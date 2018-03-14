@@ -1,0 +1,37 @@
+/* Styles for Advanced Menu */
+
+.advanced-nav li a {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.icon {
+  font-size: 1.8em;
+  /* regaurdless of what is happening the .icon class will always be 1.5em wide */
+  flex: 0 0 1.5em;
+}
+
+.button-text {
+  font-size: 1.8em;
+}
+
+.button-text span {
+  display: block;
+  font-size: 40%;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@media (min-width: 30em) {
+  .advanced-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .advanced-nav li {
+    flex: 1 0 12em;
+    display: flex;
+  }
+}
